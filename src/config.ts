@@ -41,7 +41,7 @@ export const config: Config = {
     port: parseInt(process.env.DB_PORT || "3306"),
     user: process.env.DB_USER || "root",
     password: process.env.DB_PASSWORD || "",
-    database: process.env.DB_NAME || "table_data",
+    database: process.env.DB_NAME || "sellwizr",
     tableName: process.env.DB_TABLE_NAME || "extracted_data",
   },
   retry: {

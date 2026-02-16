@@ -220,7 +220,7 @@ npm start
 # Open browser: http://localhost:8080 (Kafka UI)
 
 # Check database
-docker exec -it mysql mysql -u root -prootpassword table_data
+docker exec -it mysql mysql -u root -prootpassword sellwizr
 SELECT * FROM extracted_data LIMIT 10;
 ```
 

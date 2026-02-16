@@ -68,7 +68,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=your_password
-DB_NAME=table_data
+DB_NAME=sellwizr
 DB_TABLE_NAME=extracted_data
 
 # Performance Tuning
@@ -110,7 +110,7 @@ mysql_secure_installation
 
 # Create database (or let the app auto-create it)
 mysql -u root -p
-CREATE DATABASE table_data;
+CREATE DATABASE sellwizr;
 ```
 
 ### Running the Pipeline
@@ -269,7 +269,7 @@ Automatically detects:
 | `DB_PORT`            | MySQL port                    | 3306                     |
 | `DB_USER`            | MySQL username                | root                     |
 | `DB_PASSWORD`        | MySQL password                | (empty)                  |
-| `DB_NAME`            | Database name                 | table_data               |
+| `DB_NAME`            | Database name                 | sellwizr                 |
 | `DB_TABLE_NAME`      | Table name for data           | extracted_data           |
 | `MAX_RETRIES`        | Max HTTP retry attempts       | 3                        |
 | `RETRY_DELAY_MS`     | Base retry delay              | 1000                     |
@@ -302,7 +302,7 @@ kafka-console-consumer --topic html-table-data --from-beginning --bootstrap-serv
 mysql -u root -p
 
 # Use database
-USE table_data;
+USE sellwizr;
 
 # View data
 SELECT * FROM extracted_data LIMIT 10;

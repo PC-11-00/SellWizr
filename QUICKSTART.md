@@ -60,7 +60,7 @@ npm run producer
 **Check Database:**
 
 ```bash
-docker exec -it mysql mysql -u root -prootpassword table_data
+docker exec -it mysql mysql -u root -prootpassword sellwizr
 ```
 
 Then run:
@@ -104,7 +104,7 @@ mysql_secure_installation
 
 ```bash
 mysql -u root -p
-CREATE DATABASE table_data;
+CREATE DATABASE sellwizr;
 ```
 
 ### 4. Configure Environment

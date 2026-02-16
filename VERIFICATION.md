@@ -197,7 +197,7 @@ Complete workflow test:
 5. **Verify in Database**
 
    ```bash
-   docker exec -it mysql mysql -u root -prootpassword -e "SELECT COUNT(*) FROM table_data.extracted_data"
+   docker exec -it mysql mysql -u root -prootpassword -e "SELECT COUNT(*) FROM sellwizr.extracted_data"
    ```
 
    - [ ] Row count matches expected
